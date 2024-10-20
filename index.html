@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musify</title>
+    <link rel="icon" href="pictures/logo_musify.ico">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="https://kit.fontawesome.com/63a734d1c2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="nav_header">
+        <!-- ICONO DE PÁGINA WEB -->
+        <div class="nav_logo">
+            <img src="pictures/logo_musify.png" alt="Logo Musify">
+            <h1 class="logo_txt">Musify</h1>
+        </div>
+        <!-- BOTÓN HAMBURGUESA -->
+        <div class="menu_toggle" id="menu_toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <!-- ENLACES DE NAVEGACIÓN -->
+        <div class="nav_links">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <a href="#">Música</a>
+                    <ul class="submenu" id="submenu">
+                        <li><a href="#">Géneros</a></li>
+                        <li><a href="#">Artistas</a></li>
+                        <li><a href="#">Playlists</a></li>
+                        <li><a href="#">Podcasts</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Planes</a></li>
+                 <!-- Página actual - Activación simulada -> Aplicar JS -->
+                <li><a href="#" class="active">Sobre nosotros</a></li>
+            </ul>
+        </div>
+        <!-- BOTONES PARA UNIRSE -->
+        <div class="nav_buttons">
+            <input id="checkboxInput" type="checkbox">
+            <label class="toggleSwitch" for="checkboxInput"></label>
+            <a href="#">Iniciar sesión</a>
+            <a href="#">Registrarse</a>
+        </div>        
+    </nav>
+
+    <!-- CONTENIDO - SECCIÓN -> SOBRE NOSOTROS -->
+
+    <section class="about_us">
+        <div class="about_us-video">
+            <iframe width="600" height="400" src="https://www.youtube.com/embed/ZPdk5GaIDjo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen" ></iframe>
+        </div>
+        <div class="about_us-content">
+            <h2>Sobre nosotros</h2>
+            <p>En Musify, nos dedicamos a ofrecer la mejor experiencia de música en línea. Nuestro objetivo es brindar a nuestros usuarios la mejor calidad de música y la mejor experiencia de usuario. Con una amplia gama de canciones y planes, Musify es la mejor opción para disfrutar de la música en línea.</p>
+        </div>
+    </section>
+
+    <!-- FORMULARIO DE CONTACTO -->
+
+    <section class="contact_form">
+        <h2>Contacto</h2>
+        <form action="index.html" method="post">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required style="height: 150px; resize: none;"></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- 1ª Columna -->
+            <div class="footer-column">
+                <img src="pictures/logo_musify.png" alt="Logo Musify" class="footer-logo">
+                <p><i class="fa-solid fa-envelope" style="padding-right: 5px;"></i> contacto@musify.com</p>
+                <p><i class="fa-solid fa-phone" style="padding-right: 5px;"></i> +51 978 777 386</p>
+            </div>
+            <!-- 2ª Columna -->
+            <div class="footer-column">
+                <h3>Secciones</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Música</a></li>
+                    <li><a href="#">Planes</a></li>
+                    <li><a href="#">Sobre nosotros</a></li>
+                </ul>
+            </div>
+            <!-- 3ª Columna -->
+            <div class="footer-column">
+                <h3>Ayuda</h3>
+                <ul>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Términos de servicio</a></li>
+                    <li><a href="#">Reportar un problema</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                </ul>
+            </div>
+            <!-- 4ª Columna -->
+            <div class="footer-column">
+                <h3>Redes Sociales</h3>
+                <ul class="social-media">
+                    <li><a href="#" class="lk-fa"><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+                    <li><a href="#" class="lk-tw"><i class="fa-brands fa-x-twitter"></i>Twitter</a></li>
+                    <li><a href="#" class="lk-ig"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                    <li><a href="#" class="lk-yt"><i class="fa-brands fa-youtube"></i>YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© Todos los derechos reservados a Musify</p>
+        </div>
+    </footer>
+
+</body>
+    <script src="js/index.js"></script>
+</html>
